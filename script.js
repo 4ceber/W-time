@@ -43,21 +43,19 @@ const menus = {
     ]
 };
 
-let currentCategory = null; // Menyimpan kategori yang sedang aktif
+let currentCategory = null; 
 
 function showMenu(kategori) {
     const container = document.getElementById("menu-container");
 
-    // LOGIKA BARU: Jika kategori yang diklik sama dengan yang sedang aktif, kosongkan halaman
     if (currentCategory === kategori) {
         container.innerHTML = ""; 
-        currentCategory = null; // Reset status aktif
-        return; // Berhenti di sini
+        currentCategory = null; 
+        return; 
     }
 
-    // Jika kategori berbeda, tampilkan menu seperti biasa
     container.innerHTML = ""; 
-    currentCategory = kategori; // Update kategori aktif
+    currentCategory = kategori; 
 
     menus[kategori].forEach(menu => {
         const card = document.createElement("div");
