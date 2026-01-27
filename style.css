@@ -12,7 +12,6 @@ body {
     min-height: 100vh;
 }
 
-/* ===== HEADER ===== */
 header {
     background: linear-gradient(135deg, #2ecc71, #27ae60);
     color: white;
