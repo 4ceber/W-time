@@ -2,29 +2,38 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>NutriPlan - Menu Makanan Sehat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Fresh | Resep Menu Makanan Sehat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header>
-        <h1>🥗 NutriPlan</h1>
-        <p>Improve Your Meal!!!</p>
-
+        <h1>🥗 Life Fresh</h1>
+        <p>Improve Your Meal, Improve Your Life!</p>
     </header>
 
     <section class="filter">
-        <button onclick="showMenu('diet')">Diet</button>
-        <button onclick="showMenu('bulking')">Bulking</button>
-        <button onclick="showMenu('sehat')">Makanan Sehat</button>
+        <button onclick="showMenu('diet')">🥗 Diet</button>
+        <button onclick="showMenu('bulking')">💪 Bulking</button>
+        <button onclick="showMenu('sehat')">🍃 Makanan Sehat</button>
     </section>
 
-    <section id="menu-container" class="menu-container">
-        <!-- Menu akan muncul di sini -->
-    </section>
+    <main id="menu-container" class="menu-container">
+        </main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()"></span>
+            <h2 id="modal-title"></h2>
+            <hr class="separator">
+            <p class="label-resep">Bahan & Resep:</p>
+            <p id="modal-body"></p>
+        </div>
+    </div>
 
     <footer>
-        <p> Hidup Sehat Lebih Mudah</p>
+        <p>Hidup Sehat Lebih Mudah</p>
     </footer>
 
     <script src="script.js"></script>
