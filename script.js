@@ -26,7 +26,18 @@ resep: `1. 150 g Dada ayam fillet
 
 9. 1 butir Telur rebus
 
-10. 1 sachet mayones wijen sangrai.`
+10. 1 sachet mayones wijen sangrai.`,
+cara:`1. Marinasi ayam dengan cajun powder selama 15 menit.
+
+2. Pa Asian mentega lalu panggang ayam di atas pan hingga matang dan kecokelatan, lalu potong-potong.
+
+3. Iris selada, wortel, timun, dan kol ungu sesuai selera.
+
+4. Potong telur rebus menjadi 4 bagian
+
+5. Tata sayuran di wadah, tambahkan ayam panggang, telur, dan tomat cherry di atasnya.
+
+6. Siram saus mayonaise wijen sangrai, aduk-aduk lalu siap disantap`,
         },
         {
             nama: "Sup Sayur",
@@ -80,7 +91,7 @@ function showMenu(kategori) {
     menus[kategori].forEach(menu => {
         const card = document.createElement("div");
         card.className = "menu-card";
-        card.onclick = () => showRecipe(menu.nama, menu.resep);
+        card.onclick = () => showRecipe(menu.nama, menu.resep, menu.cara);
         
         card.innerHTML = `
             <div class="menu-info">
@@ -95,10 +106,11 @@ function showMenu(kategori) {
     });
 }
 
-function showRecipe(nama, resep) {
+function showRecipe(nama, resep,cara) {
     document.getElementById("modal-title").innerText = nama;
     document.getElementById("modal-body").innerText = resep;
     document.getElementById("modal").style.display = "flex";
+    document.getElementById("cara").innerText = cara;
 }
 
 function closeModal() {
