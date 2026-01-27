@@ -1,10 +1,19 @@
 const menus = {
     diet: [
         {
-            nama: "Salad Ayam",
+            nama: "Salad Ayam Panggang",
             deskripsi: "Rendah kalori, tinggi protein dengan sayuran segar.",
             kalori: "250 kkal",
-            resep: "Potongan ayam rebus, selada romaine, tomat cherry, timun, dan dressing olive oil lemon."
+            resep: `1. 150 g Dada ayam fillet, 
+            2. 1 sdm cajun powder, 
+            3. 1 sdm Mentega,
+            4. 4 lembar Selada, 
+            5. 1/2 buah Wortel,
+            6. 1/2 buah Timun,
+            7. secukupnya Kol ungu,
+            8. 4 buah Tomat cherry,
+            9. 1 butir Telur rebus,
+            10.1 sachet mayones wijen sangrai.`
         },
         {
             nama: "Sup Sayur",
