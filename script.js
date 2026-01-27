@@ -2,60 +2,45 @@ const menus = {
     diet: [
         {
             nama: "Salad Ayam Panggang",
-            deskripsi: "Rendah kalori, tinggi protein dengan sayuran segar.",
-            kalori: "688 kalori",
-            resep: `1. 150 g Dada ayam fillet
-            2. 1 sdm cajun powder
-            3. 1 sdm Mentega
-            4. 4 lembar Selada
-            5. 1/2 buah Wortel
-            6. 1/2 buah Timun
-            7. secukupnya Kol ungu
-            8. 4 buah Tomat cherry
-            9. 1 butir Telur rebus
-            10. 1 sachet mayones wijen sangrai.`
+
+deskripsi: "Rendah kalori, tinggi protein dengan sayuran segar.",
+
+kalori: "688 kalori",
+gambar: "https://img-global.cpcdn.com/recipes/0254e333c774e771/1280x1280sq80/photo.webp",
+
+resep: `1. 150 g Dada ayam fillet
+
+2. 1 sdm cajun powder
+
+3. 1 sdm Mentega
+
+4. 4 lembar Selada
+
+5. 1/2 buah Wortel
+
+6. 1/2 buah Timun
+
+7. secukupnya Kol ungu
+
+8. 4 buah Tomat cherry
+
+9. 1 butir Telur rebus
+
+10. 1 sachet mayones wijen sangrai.`
         },
         {
             nama: "Sup Sayur",
             deskripsi: "Tinggi serat, sangat mengenyangkan untuk diet.",
             kalori: "180 kalori",
+            gambar: "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400",
             resep: "Wortel, kentang, brokoli, seledri, dan bawang putih geprek."
         },
-                {
+        {
             nama: "Oatmeal Pisang & Madu",
-            deskripsi: "Sarapan tinggi serat yang bikin kenyang lebih lama dan bantu pencernaan.",
+            deskripsi: "Sarapan tinggi serat yang bikin kenyang lebih lama.",
             kalori: "300 kalori",
-            resep: `1. 40 g oatmeal
-           2.  1 buah pisang kecil (iris)
-          3.  1 sdt madu
-            4. 200 ml air atau susu rendah lemak `
-        },
-                        {
-            nama: "Oatmeal Pisang & Madu",
-            deskripsi: "Sarapan tinggi serat yang bikin kenyang lebih lama dan bantu pencernaan.",
-            kalori: "300 kalori",
-            resep: `1. 40 g oatmeal
-           2.  1 buah pisang kecil (iris)
-          3.  1 sdt madu
-            4. 200 ml air atau susu rendah lemak `
-        },
-                        {
-            nama: "Oatmeal Pisang & Madu",
-            deskripsi: "Sarapan tinggi serat yang bikin kenyang lebih lama dan bantu pencernaan.",
-            kalori: "300 kalori",
-            resep: `1. 40 g oatmeal
-           2.  1 buah pisang kecil (iris)
-          3.  1 sdt madu
-            4. 200 ml air atau susu rendah lemak `
-        },
-                        {
-            nama: "Oatmeal Pisang & Madu",
-            deskripsi: "Sarapan tinggi serat yang bikin kenyang lebih lama dan bantu pencernaan.",
-            kalori: "300 kalori",
-            resep: `1. 40 g oatmeal
-           2.  1 buah pisang kecil (iris)
-          3.  1 sdt madu
-            4. 200 ml air atau susu rendah lemak `
+            gambar: "https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=400",
+            resep: "1. 40 g oatmeal\n2. 1 buah pisang\n3. 1 sdt madu"
         }
     ],
     bulking: [
@@ -63,13 +48,8 @@ const menus = {
             nama: "Nasi Ayam & Telur",
             deskripsi: "Kombinasi sempurna protein dan karbo kompleks.",
             kalori: "650 kalori",
-            resep: "150g Nasi putih, 200g dada ayam panggang, 2 telur rebus, dan sedikit kecap manis."
-        },
-        {
-            nama: "Oatmeal Pisang",
-            deskripsi: "Energi tinggi untuk performa otot maksimal.",
-            kalori: "500 kkal",
-            resep: "Oatmeal instan, 1 buah pisang matang, susu full cream, dan 1 sendok makan madu."
+            gambar: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
+            resep: "150g Nasi putih, 200g dada ayam panggang, 2 telur rebus."
         }
     ],
     sehat: [
@@ -77,13 +57,8 @@ const menus = {
             nama: "Ikan Panggang",
             deskripsi: "Sumber omega-3 yang baik untuk otak.",
             kalori: "400 kalori",
-            resep: "Fillet ikan nila/tuna, perasan jeruk nipis, bawang putih, dan lada hitam."
-        },
-        {
-            nama: "Tumis Sayur Pelangi",
-            deskripsi: "Kaya akan vitamin dan mineral esensial.",
-            kalori: "300 kalori",
-            resep: "Buncis, wortel, jagung muda, bawang merah, dan sedikit minyak zaitun."
+            gambar: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400",
+            resep: "Fillet ikan nila/tuna, perasan jeruk nipis, bawang putih."
         }
     ]
 };
@@ -108,10 +83,13 @@ function showMenu(kategori) {
         card.onclick = () => showRecipe(menu.nama, menu.resep);
         
         card.innerHTML = `
-            <h3>${menu.nama}</h3>
-            <p>${menu.deskripsi}</p>
-            <strong>🔥 ${menu.kalori}</strong>
-            <p style="font-size: 11px; color: #999; margin-top: 10px;">Klik untuk resep</p>
+            <div class="menu-info">
+                <h3>${menu.nama}</h3>
+                <p>${menu.deskripsi}</p>
+                <strong>🔥 ${menu.kalori}</strong>
+                <p style="font-size: 11px; color: #999; margin-top: 10px;">Klik untuk resep</p>
+            </div>
+            <img src="${menu.gambar}" alt="${menu.nama}" class="menu-img">
         `;
         container.appendChild(card);
     });
@@ -129,7 +107,5 @@ function closeModal() {
 
 window.onclick = function(event) {
     const modal = document.getElementById("modal");
-    if (event.target == modal) {
-        closeModal();
-    }
+    if (event.target == modal) closeModal();
 }
