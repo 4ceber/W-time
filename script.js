@@ -43,10 +43,21 @@ const menus = {
     ]
 };
 
-// Fungsi menampilkan menu berdasarkan kategori
+let currentCategory = null; // Menyimpan kategori yang sedang aktif
+
 function showMenu(kategori) {
     const container = document.getElementById("menu-container");
+
+    // LOGIKA BARU: Jika kategori yang diklik sama dengan yang sedang aktif, kosongkan halaman
+    if (currentCategory === kategori) {
+        container.innerHTML = ""; 
+        currentCategory = null; // Reset status aktif
+        return; // Berhenti di sini
+    }
+
+    // Jika kategori berbeda, tampilkan menu seperti biasa
     container.innerHTML = ""; 
+    currentCategory = kategori; // Update kategori aktif
 
     menus[kategori].forEach(menu => {
         const card = document.createElement("div");
@@ -63,25 +74,19 @@ function showMenu(kategori) {
     });
 }
 
-// Fungsi membuka popup resep
 function showRecipe(nama, resep) {
     document.getElementById("modal-title").innerText = nama;
     document.getElementById("modal-body").innerText = resep;
     document.getElementById("modal").style.display = "flex";
 }
 
-// Fungsi menutup popup
 function closeModal() {
     document.getElementById("modal").style.display = "none";
 }
 
-// Klik di luar kotak modal untuk menutup
 window.onclick = function(event) {
     const modal = document.getElementById("modal");
     if (event.target == modal) {
         closeModal();
     }
 }
-
-// Menampilkan menu sehat secara otomatis saat halaman dibuka
-window.onload = () => showMenu('sehat');
