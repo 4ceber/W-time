@@ -26,22 +26,59 @@ header h1 {
     font-size: 2.8rem;
     margin-bottom: 10px;
 }
-/* Opsional: Membuat tombol All berwarna berbeda */
-.filter button[onclick*="'all'"] {
+/* Container Utama Filter */
+.filter-container {
+    text-align: center;
+    margin: 30px 20px;
+}
+
+/* Box Atas (Semua Menu) */
+.all-menu-box {
+    margin-bottom: 15px; /* Jarak ke bawah */
+}
+
+.btn-all {
+    background: #2c3e50; /* Warna gelap agar kontras */
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 12px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-all:hover {
+    background: #27ae60;
+    transform: scale(1.05);
+}
+
+/* Box Bawah (Kategori) */
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter button {
+    background: white;
+    color: #27ae60;
+    border: 2px solid #27ae60;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.filter button:hover {
     background: #27ae60;
     color: white;
 }
-
-.filter button[onclick*="'all'"]:hover {
-    background: #219150;
-}
-
-/* Memastikan teks modal rapi seperti permintaan sebelumnya */
-#modal-body, #cara {
-    line-height: 1.8;
-    margin-bottom: 15px;
-}
-
 .filter {
     display: flex;
     justify-content: center;
