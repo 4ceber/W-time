@@ -79,7 +79,6 @@ let currentCategory = null;
 function showMenu(kategori) {
     const container = document.getElementById("menu-container");
 
-    // Jika klik kategori yang sama, tutup menu
     if (currentCategory === kategori) {
         container.innerHTML = ""; 
         currentCategory = null; 
@@ -91,20 +90,19 @@ function showMenu(kategori) {
 
     let menuDitampilkan = [];
 
+    // Logika untuk menampilkan SEMUA menu
     if (kategori === 'all') {
-        // Gabungkan semua array dari objek menus menjadi satu array besar
         Object.keys(menus).forEach(key => {
             menuDitampilkan = menuDitampilkan.concat(menus[key]);
         });
     } else {
-        // Ambil kategori spesifik (diet, bulking, atau sehat)
         menuDitampilkan = menus[kategori];
     }
 
     menuDitampilkan.forEach(menu => {
         const card = document.createElement("div");
         card.className = "menu-card";
-        card.onclick = () => showRecipe(menu.nama, menu.resep, menu.cara || "Cara belum tersedia.");
+        card.onclick = () => showRecipe(menu.nama, menu.resep, menu.cara || "Cara tidak tersedia.");
         
         card.innerHTML = `
             <div class="menu-info">
