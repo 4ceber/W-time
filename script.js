@@ -20,6 +20,42 @@ const menus = {
             deskripsi: "Tinggi serat, sangat mengenyangkan untuk diet.",
             kalori: "180 kalori",
             resep: "Wortel, kentang, brokoli, seledri, dan bawang putih geprek."
+        },
+                {
+            nama: "Oatmeal Pisang & Madu",
+            deskripsi: "Sarapan tinggi serat yang bikin kenyang lebih lama dan bantu pencernaan.",
+            kalori: "300 kalori",
+            resep: `1. 40 g oatmeal
+           2.  1 buah pisang kecil (iris)
+          3.  1 sdt madu
+            4. 200 ml air atau susu rendah lemak `
+        },
+                        {
+            nama: "Oatmeal Pisang & Madu",
+            deskripsi: "Sarapan tinggi serat yang bikin kenyang lebih lama dan bantu pencernaan.",
+            kalori: "300 kalori",
+            resep: `1. 40 g oatmeal
+           2.  1 buah pisang kecil (iris)
+          3.  1 sdt madu
+            4. 200 ml air atau susu rendah lemak `
+        },
+                        {
+            nama: "Oatmeal Pisang & Madu",
+            deskripsi: "Sarapan tinggi serat yang bikin kenyang lebih lama dan bantu pencernaan.",
+            kalori: "300 kalori",
+            resep: `1. 40 g oatmeal
+           2.  1 buah pisang kecil (iris)
+          3.  1 sdt madu
+            4. 200 ml air atau susu rendah lemak `
+        },
+                        {
+            nama: "Oatmeal Pisang & Madu",
+            deskripsi: "Sarapan tinggi serat yang bikin kenyang lebih lama dan bantu pencernaan.",
+            kalori: "300 kalori",
+            resep: `1. 40 g oatmeal
+           2.  1 buah pisang kecil (iris)
+          3.  1 sdt madu
+            4. 200 ml air atau susu rendah lemak `
         }
     ],
     bulking: [
