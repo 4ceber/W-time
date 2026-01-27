@@ -3,22 +3,22 @@ const menus = {
         {
             nama: "Salad Ayam Panggang",
             deskripsi: "Rendah kalori, tinggi protein dengan sayuran segar.",
-            kalori: "250 kkal",
-            resep: `1. 150 g Dada ayam fillet, 
-            2. 1 sdm cajun powder, 
-            3. 1 sdm Mentega,
-            4. 4 lembar Selada, 
-            5. 1/2 buah Wortel,
-            6. 1/2 buah Timun,
-            7. secukupnya Kol ungu,
-            8. 4 buah Tomat cherry,
-            9. 1 butir Telur rebus,
-            10.1 sachet mayones wijen sangrai.`
+            kalori: "688 kalori",
+            resep: `1. 150 g Dada ayam fillet
+            2. 1 sdm cajun powder
+            3. 1 sdm Mentega
+            4. 4 lembar Selada
+            5. 1/2 buah Wortel
+            6. 1/2 buah Timun
+            7. secukupnya Kol ungu
+            8. 4 buah Tomat cherry
+            9. 1 butir Telur rebus
+            10. 1 sachet mayones wijen sangrai.`
         },
         {
             nama: "Sup Sayur",
             deskripsi: "Tinggi serat, sangat mengenyangkan untuk diet.",
-            kalori: "180 kkal",
+            kalori: "180 kalori",
             resep: "Wortel, kentang, brokoli, seledri, dan bawang putih geprek."
         }
     ],
@@ -26,7 +26,7 @@ const menus = {
         {
             nama: "Nasi Ayam & Telur",
             deskripsi: "Kombinasi sempurna protein dan karbo kompleks.",
-            kalori: "650 kkal",
+            kalori: "650 kalori",
             resep: "150g Nasi putih, 200g dada ayam panggang, 2 telur rebus, dan sedikit kecap manis."
         },
         {
@@ -40,13 +40,13 @@ const menus = {
         {
             nama: "Ikan Panggang",
             deskripsi: "Sumber omega-3 yang baik untuk otak.",
-            kalori: "400 kkal",
+            kalori: "400 kalori",
             resep: "Fillet ikan nila/tuna, perasan jeruk nipis, bawang putih, dan lada hitam."
         },
         {
             nama: "Tumis Sayur Pelangi",
             deskripsi: "Kaya akan vitamin dan mineral esensial.",
-            kalori: "300 kkal",
+            kalori: "300 kalori",
             resep: "Buncis, wortel, jagung muda, bawang merah, dan sedikit minyak zaitun."
         }
     ]
