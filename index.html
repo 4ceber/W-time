@@ -15,11 +15,16 @@
         <p>Klik tombol untuk lihat menu, klik lagi untuk tutup.</p>
     </header>
 
-<section class="filter">
-    <button onclick="showMenu('all')">🌍 All menu</button> 
-    <button onclick="showMenu('diet')">🥗 Diet</button>
-    <button onclick="showMenu('bulking')">💪 Bulking</button>
-    <button onclick="showMenu('sehat')">🍃 Makanan Sehat</button>
+<section class="filter-container">
+    <div class="all-menu-box">
+        <button class="btn-all" onclick="showMenu('all')">🌍 Lihat Semua Menu</button>
+    </div>
+
+    <div class="filter">
+        <button onclick="showMenu('diet')">🥗 Diet</button>
+        <button onclick="showMenu('bulking')">💪 Bulking</button>
+        <button onclick="showMenu('sehat')">🍃 Sehat</button>
+    </div>
 </section>
 
     <main id="menu-container" class="menu-container"></main>
