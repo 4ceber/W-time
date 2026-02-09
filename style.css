@@ -192,9 +192,9 @@ header h1 {
 /* Mengatur Jarak Kalimat di Resep & Cara */
 #modal-body, #cara {
     line-height: 1; /* Menambah jarak antar baris */
-    margin-bottom: 20px;
+    margin-bottom: 1px;
     color: #444;
-    font-size: 0.95rem;
+    font-size: 1rem;
 }
 
 .label-resep, .fw-bold {
