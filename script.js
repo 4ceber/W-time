@@ -224,15 +224,168 @@ const menus = {
 4. Tutup dengan roti lainnya dan sajikan.`
     }
     ],
-    sehat: [
-        {
-            nama: "Ikan Panggang",
-            deskripsi: "Sumber omega-3 yang baik untuk otak.",
-            kalori: "400 kalori",
-            gambar: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400",
-            resep: "Fillet ikan nila/tuna, perasan jeruk nipis, bawang putih."
-        }
-    ]
+sehat: [
+  {
+    nama: "Salad Quinoa Ayam Grill",
+    deskripsi: "Superfood tinggi serat dan protein tanpa lemak jenuh.",
+    kalori: "450 kalori",
+    gambar: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400",
+    resep: `1. 100 g Quinoa masak
+2. 150 g Dada ayam panggang
+3. 50 g Bayam segar
+4. 5 iris Tomat ceri
+5. 1 sdm Dressing lemon olive oil`,
+    cara: `1. Panggang dada ayam hingga matang kecokelatan.
+2. Campurkan quinoa, bayam, dan tomat ke dalam mangkuk.
+3. Potong ayam lalu letakkan di atas campuran quinoa.
+4. Siram dengan dressing lemon dan olive oil.
+5. Sajikan selagi ayam masih hangat.`
+  },
+  {
+    nama: "Pepes Ikan Kembung Nasi Merah",
+    deskripsi: "Kaya Omega-3 untuk kesehatan jantung dan otak.",
+    kalori: "480 kalori",
+    gambar: "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400",
+    resep: `1. 2 ekor Ikan kembung segar
+2. 150 g Nasi merah
+3. Bumbu kuning (kunyit, jahe, kemiri)
+4. Daun kemangi dan tomat iris
+5. Daun pisang untuk membungkus`,
+    cara: `1. Lumuri ikan dengan bumbu kuning dan sedikit garam.
+2. Tambahkan kemangi dan tomat di atas ikan.
+3. Bungkus rapat dengan daun pisang dan semat dengan lidi.
+4. Kukus selama 25 menit hingga matang merata.
+5. Sajikan dengan nasi merah hangat.`
+  },
+  {
+    nama: "Smoothie Bowl Berry & Chia",
+    deskripsi: "Sarapan segar kaya antioksidan dan serat.",
+    kalori: "350 kalori",
+    gambar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwBOeUrGYmw-pcbfK-0nTDQkVFTR4LMDErIm88dYlkGA&s=10",
+    resep: `1. 100 g Buah beri beku
+2. 1 buah Pisang ambon
+3. 150 ml Susu almond
+4. 1 sdm Chia seeds
+5. 5 butir Kacang almond cincang`,
+    cara: `1. Masukkan beri, pisang, dan susu ke dalam blender.
+2. Proses hingga tekstur halus dan kental.
+3. Tuangkan ke dalam mangkuk saji.
+4. Taburkan chia seeds dan cincangan almond di atasnya.
+5. Nikmati segera dalam keadaan dingin.`
+  },
+  {
+    nama: "Sup Ayam Jahe Shiitake",
+    deskripsi: "Menu penghangat tubuh yang rendah lemak.",
+    kalori: "380 kalori",
+    gambar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCqD-aDvaLF2kg3WhuFvK2HNWhV4-RKlvU6iRmqBgkMg&s=10",
+    resep: `1. 150 g Dada ayam tanpa kulit
+2. 50 g Jamur shiitake iris
+3. 1 buah Wortel potong bulat
+4. 2 ruas Jahe digeprek
+5. Garam laut dan daun seledri`,
+    cara: `1. Rebus air hingga mendidih lalu masukkan jahe.
+2. Masukkan potongan ayam dan rebus hingga empuk.
+3. Tambahkan wortel dan jamur ke dalam air rebusan.
+4. Beri garam laut secukupnya dan taburkan seledri.
+5. Sajikan selagi hangat untuk hasil maksimal.`
+  },
+  {
+    nama: "Tahu Tempe Bacem Kukus",
+    deskripsi: "Protein nabati bersih tanpa minyak goreng.",
+    kalori: "320 kalori",
+    gambar: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400",
+    resep: `1. 2 potong Tahu & 2 potong Tempe
+2. 200 ml Air kelapa murni
+3. 1 sdm Gula semut atau Stevia
+4. Ketumbar, lengkuas, dan daun salam
+5. Sayur urap kukus sebagai pelengkap`,
+    cara: `1. Masak tahu tempe dengan air kelapa dan bumbu.
+2. Gunakan api kecil hingga air menyusut dan bumbu meresap.
+3. Panggang sebentar di teflon tanpa minyak jika suka tekstur kering.
+4. Siapkan sayuran urap yang sudah dikukus.
+5. Sajikan semuanya dalam satu piring.`
+  },
+  {
+    nama: "Ubi Panggang & Buncis Bawang",
+    deskripsi: "Karbohidrat kompleks dengan tumisan serat.",
+    kalori: "340 kalori",
+    gambar: "https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?w=400",
+    resep: `1. 200 g Ubi manis (ungu/kuning)
+2. 100 g Buncis muda segar
+3. 2 siung Bawang putih cincang
+4. 1 sdt Minyak kelapa
+5. Biji wijen untuk taburan`,
+    cara: `1. Panggang ubi di dalam oven atau air fryer hingga empuk.
+2. Tumis bawang putih dengan minyak kelapa hingga harum.
+3. Masukkan buncis dan masak cepat agar tetap renyah.
+4. Letakkan ubi dan buncis di piring saji.
+5. Taburkan biji wijen di atas buncis.`
+  },
+  {
+    nama: "Steak Salmon Asparagus",
+    deskripsi: "Menu mewah yang sangat sehat untuk jantung.",
+    kalori: "420 kalori",
+    gambar: "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400",
+    resep: `1. 150 g Fillet salmon
+2. 1 ikat Kecil asparagus
+3. Irisan jeruk lemon segar
+4. Lada hitam dan garam laut
+5. 1 sdt Mentega organik`,
+    cara: `1. Beri bumbu lada dan garam pada kedua sisi salmon.
+2. Panggang salmon di wajan anti lengket dengan sedikit mentega.
+3. Masukkan asparagus ke wajan saat salmon hampir matang.
+4. Peras jeruk lemon di atas salmon yang sudah matang.
+5. Tata di piring dan sajikan segera.`
+  },
+  {
+    nama: "Oat Gurih Ayam Suwir",
+    deskripsi: "Pengganti bubur nasi dengan serat lebih tinggi.",
+    kalori: "390 kalori",
+    gambar: "https://images.unsplash.com/photo-1517673400267-0251440c45dc?w=400",
+    resep: `1. 50 g Rolled oats utuh
+2. 100 g Dada ayam suwir rebus
+3. 1 butir Telur ayam rebus
+4. 300 ml Air kaldu ayam asli
+5. Irisan daun bawang dan bawang putih goreng`,
+    cara: `1. Rebus oat dengan air kaldu hingga menjadi bubur.
+2. Aduk rata agar tidak menggumpal di bagian bawah.
+3. Tuang bubur oat ke dalam mangkuk.
+4. Beri topping ayam suwir, telur rebus, dan daun bawang.
+5. Tambahkan sedikit lada putih sesuai selera.`
+  },
+  {
+    nama: "Gado-Gado Siram Rendah Gula",
+    deskripsi: "Vitamin lengkap dari aneka sayuran lokal.",
+    kalori: "410 kalori",
+    gambar: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400",
+    resep: `1. Campuran sayur rebus (labu, kacang panjang, tauge)
+2. 1 potong Tahu putih kukus
+3. 1 butir Telur rebus
+4. 2 sdm Bumbu kacang (minim gula)
+5. Kerupuk gandum atau emping kecil`,
+    cara: `1. Susun semua sayuran rebus dan tahu di piring.
+2. Belah telur rebus menjadi dua dan letakkan di atasnya.
+3. Siram dengan bumbu kacang yang sudah diencerkan.
+4. Tambahkan sedikit kerupuk gandum sebagai pelengkap.
+5. Sajikan sebagai menu makan siang yang mengenyangkan.`
+  },
+  {
+    nama: "Pasta Gandum Aglio Udang",
+    deskripsi: "Pasta sehat dengan lemak baik dari minyak zaitun.",
+    kalori: "460 kalori",
+    gambar: "https://images.unsplash.com/photo-1546549032-9571cd6b27df?w=400",
+    resep: `1. 75 g Pasta gandum (berat kering)
+2. 100 g Udang kupas segar
+3. 3 siung Bawang putih iris tipis
+4. Chili flakes dan peterseli
+5. 1 sdm Extra virgin olive oil`,
+    cara: `1. Rebus pasta gandum hingga matang al dente.
+2. Tumis bawang putih dengan olive oil menggunakan api kecil.
+3. Masukkan udang dan masak hingga berubah warna kemerahan.
+4. Masukkan pasta dan chili flakes, aduk hingga rata.
+5. Taburkan peterseli cincang sebelum disajikan.`
+  }
+]
 };
 
 let currentCategory = null; 
